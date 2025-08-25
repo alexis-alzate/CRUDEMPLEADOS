@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Empleados javascript + postgresql</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            🏢 Gestion de empleados
+
+        </h1>
+        <h2>
+            <span id="form-title">➕agregar empleado</span>
+        </h2>
+
+        <form>
+            <label for="cedula">*Cedula</label>
+            <input type="text" id="cedula" required>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" * require>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" require>
+
+            <label for="email">Email</label require>
+            <input type="text" id="email" requiere>
+
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" require>
+
+            <label for="cargo">Cargo</label>
+            <select id="cargo" required>
+                <option value="">Slecionar Cargo</option>
+                <option value="Desarrollador">Desarrollador</option>
+                <option value="Disenador">Disenador</option>
+                <option value="Tester">Tester</option>
+                <option value="Administrador">Administrador</option>
+            </select>
+
+            <div>
+                <label for="salario">Salario</label>
+                <input type="number" id="salario" min="0" step="1000">
+            </div>
+
+            <div>
+                <label for="estado">Estado</label>
+                <select id="estado">requiere>
+
+                    <option value="Inactivo">Inactivo</option>
+                    <option value="Activo">Activo</option>
+            </div>
+
+            <button type="submit"  class="btn btn-primary" id="submitBtn">
+                ➕agregar usuario
+            </button>
+
+            <button type="submit" class="btn btn-warning" onclick="cancelarEdicion()">
+            ❌ ancelar
+            </button>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
